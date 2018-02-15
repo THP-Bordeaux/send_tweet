@@ -15,8 +15,6 @@ class Sendtweet
 
   def perform
     send_tweet
-
-
   end
 
 
