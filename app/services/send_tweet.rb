@@ -1,7 +1,7 @@
 require 'twitter'
 
 
-class Sendtweet
+class SendTweet
 
   attr_accessor :text
   attr_accessor :client
@@ -27,7 +27,11 @@ class Sendtweet
   end
 
   def send_tweet
-    @client.update(@text)
+    if @client.update(@text)
+      return true
+    else
+      return false
+    end
   end
 
 end

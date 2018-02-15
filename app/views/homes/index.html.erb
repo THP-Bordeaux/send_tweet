@@ -1,0 +1,8 @@
+<h1>c'est ici pour twitter</h1>
+
+<%= render "/layouts/flash" %>
+<%= form_for :params_tweet do |f| %>
+  <%= f.text_field :content, placeholder:"Que veux-tu tweeter ?" %>
+  <br><br>
+  <%= f.submit value:"Tweeter" %>
+<% end %>
