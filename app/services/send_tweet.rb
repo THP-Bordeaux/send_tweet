@@ -5,11 +5,12 @@ Dotenv.load
 
 class Sendtweet
 
+  attr_accessor :text
+  attr_accessor :client
 
-
-  def initialize(string)
-
-
+  def initialize(text)
+    @text = text
+    log_in_to_twitter
   end
 
   def perform
@@ -28,7 +29,7 @@ class Sendtweet
   end
 
   def send_tweet
-
+    @client.update(@text)
   end
 
 end
