@@ -27,7 +27,7 @@ class SendTweet
   end
 
   def send_tweet
-    hashtag = "#informatique, #bootcamp, #programmation, #FullStack, #MOOC, #bordeaux, #gironde, PeerLearning, RubyOnRails, PoleEmploi, #startup, #JavaScript, #CodeCademy, #OdinProject, #FrenchTech, #numérique, #EdTech #TransfoNum, #WomenInTech, #LearnToCode, #StationF".split('')
+    hashtag = "#informatique, #bootcamp, #programmation, #FullStack, #MOOC, #bordeaux, #gironde, #PeerLearning, #RubyOnRails, #PoleEmploi, #startup, #JavaScript, #CodeCademy, #OdinProject, #FrenchTech, #numérique, #EdTech #TransfoNum, #WomenInTech, #LearnToCode, #StationF".split(',')
     text = @text + " "+ hashtag.sample(2).join(' ')
     if @client.update(text)
       return true
