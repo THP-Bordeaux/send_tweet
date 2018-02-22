@@ -1,5 +1,4 @@
 # README
 
-Le lien heroku est donné sur le site the hacking project. 
-
-compte twitter https://twitter.com/SalamandreComte
+app pour envoyer des tweets.
+Pacourer le dossier pour en savoir plus.
